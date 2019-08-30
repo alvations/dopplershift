@@ -5,7 +5,7 @@ Pythonic SQL for mere mortals.
 
 # Usage:
 
-```
+```python
 from dopplershift import Connection
 
 host   = 'rayleigh.3onystnrm1rn.us-east-1.redshift.amazonaws.com'
