@@ -2,8 +2,14 @@
 
 Pythonic SQL for mere mortals.
 
+# Install
 
-# Usage:
+```
+pip install -U dopplershift
+```
+
+
+# Usage
 
 ```python
 from dopplershift import Connection

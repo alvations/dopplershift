@@ -5,6 +5,8 @@ import sys
 import psycopg2
 import numpy as np
 
+__version__ = 0.0.2
+
 class Connection(psycopg2.extensions.connection):
     def __init__(self, dbname, host, port, user, pwd, **kwargs):
         self.con = psycopg2.connect(dbname=dbname, host=host, port= port,
