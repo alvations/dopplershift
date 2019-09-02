@@ -22,6 +22,28 @@ user   = 'alvations'
 pwd    = 'JjMKkdW8vJABswyT'
 
 con = Connection(dbname, host, port, user, pwd)
+
+
+### Show all tables.
+
+```python
+# Show all tables in DB.
+con.show_all_tables()
+```
+
+[out]:
+
+```
+table_schema  | table_name                                          
+--------------+----------------
+testing       | data
+stagging      | results
+production    | results
+```
+
+### Show columns in table.
+
+```python
 con.show_column_names('testing.data')
 ```
 
@@ -36,7 +58,7 @@ testing          |      data      | language            | character varying(3)  
 testing          |      data      | timestamp           | timestamp without time zone | 5          
 ```
 
-###
+### Other Functions.
 
 ```python
 # Get column names.
@@ -51,12 +73,4 @@ testing          |      data      | timestamp           | timestamp without time
 >>> con.execute_fetchall("SELECT TOP 2 * FROM testing.data")
 [ (1, "hello world", "en", datetime.datetime(2019, 9, 2, 14, 5, 58)),
   (2, "hallo welt", "de", datetime.datetime(2019, 9, 2, 14, 6, 15)) ]
-
-# Show all tables in DB.
->>> con.show_all_tables()
-table_schema  | table_name                                          
---------------+----------------
-testing       | data
-stagging      | results
-production    | results
 ```
