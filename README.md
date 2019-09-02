@@ -22,7 +22,7 @@ user   = 'alvations'
 pwd    = 'JjMKkdW8vJABswyT'
 
 con = Connection(dbname, host, port, user, pwd)
-
+```
 
 ### Show all tables.
 
