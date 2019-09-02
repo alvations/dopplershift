@@ -24,10 +24,9 @@ pwd    = 'JjMKkdW8vJABswyT'
 con = Connection(dbname, host, port, user, pwd)
 ```
 
-### Show all tables.
+### Show all schemas and tables in DB.
 
 ```python
-# Show all tables in DB.
 con.show_all_tables()
 ```
 
@@ -41,7 +40,7 @@ stagging      | results
 production    | results
 ```
 
-### Show columns in table.
+### Show columns in specific table.
 
 ```python
 con.show_column_names('testing.data')
