@@ -38,7 +38,7 @@ testing          |      data      | timestamp           | timestamp without time
 
 ###
 
-```
+```python
 # Get column names.
 >>> con.get_column_names('testing.data')
 ('id', 'text', 'language', 'timestamp')
