@@ -42,7 +42,7 @@ class Connection:
         self.pretty_print(header_names, self.cursor.fetchall(), output)
 
     @auto_rollback
-    def list_all_tables(self, output=sys.stdout):
+    def show_all_tables(self, output=sys.stdout):
         query = str("select table_schema, table_name "
                     "from information_schema.tables "
                     "where table_schema "
