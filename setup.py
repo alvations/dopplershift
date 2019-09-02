@@ -6,7 +6,7 @@ from distutils.core import setup
 
 setup(
     name='dopplershift',
-    version='0.0.4',
+    version='0.0.5',
     packages=['dopplershift'],
     description='Pythonic SQL for mere mortals.',
     long_description='',
