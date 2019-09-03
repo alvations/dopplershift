@@ -53,7 +53,7 @@ class Connection:
     def topn_rows(self, table_name, n=10, column_names="*", output=sys.stdout):
         if column_names == "*":
             column_names = ', '.join(self.get_column_names(table_name))
-        self.cursor.execute(f"SELECT TOP 10 {column_names} from {table_name};")
+        self.cursor.execute(f"SELECT TOP {n} {column_names} from {table_name};")
         ##self.pretty_print(column_names, self.cursor.fetchall(), output)
         return self.cursor.fetchall()
 
